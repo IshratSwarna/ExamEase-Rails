@@ -88,6 +88,7 @@ GEM
     bootsnap (1.18.4)
       msgpack (~> 1.2)
     builder (3.3.0)
+    cancancan (3.6.1)
     capybara (3.40.0)
       addressable
       matrix
@@ -114,6 +115,8 @@ GEM
       warden (~> 1.2.3)
     drb (2.2.1)
     erubi (1.13.0)
+    faker (3.5.1)
+      i18n (>= 1.8.11, < 2)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.6)
@@ -254,10 +257,12 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  cancancan
   capybara
   cssbundling-rails (~> 1.4)
   debug
   devise
+  faker
   jbuilder
   jsbundling-rails
   pg (~> 1.1)
