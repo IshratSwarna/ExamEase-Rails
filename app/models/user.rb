@@ -9,4 +9,6 @@ class User < ApplicationRecord
   after_initialize do
     self.role ||= :examinee if new_record?
   end
+
+  validates :role, presence: true
 end

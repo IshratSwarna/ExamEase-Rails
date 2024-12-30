@@ -1,0 +1,9 @@
+<div class="row border-bottom mt-4">
+  <div class="col">
+    <h3>Posts</h3>
+  </div>
+  <div class="col text-end">
+    <%= link_to 'Add New Post', new_post_path, class:"btn btn-primary btn-sm" %>
+  </div>
+</div>
+<%= render @posts %>

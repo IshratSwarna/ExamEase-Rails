@@ -1,0 +1,19 @@
+<%= form_for @post do |f| %>
+
+<div>
+<%= f.label :title %>
+<%= f.text_field :title %>
+</div>
+<div>
+<%= f.label :body %>
+<%= f.text_area :body %>
+</div>
+<div>
+<%= f.label :post_type %>
+<%= f.select :post_type, Post.post_types.keys.map {|type| [type.humanize, type]} %>
+</div>
+<div>
+<%= f.submit "save" %>
+</div>
+
+<% end %>
